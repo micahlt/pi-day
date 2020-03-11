@@ -34,20 +34,20 @@ function nextDigit() {
 function fullScreen() {
   /*
   if (filled = false) { */
-  if (body.requestFullscreen) {
-    body.requestFullscreen();
+  if (document.documentElement.requestFullscreen) {
+    document.documentElement.requestFullscreen()
     filled = true;
     body.style.width = "100%";
-  } else if (body.mozRequestFullScreen) {
-    body.mozRequestFullScreen();
+  } else if (document.documentElement.mozRequestFullscreen) {
+    document.documentElement.mozrequestFullscreen()
     filled = true;
     body.style.width = "100%";
-  } else if (body.webkitRequestFullscreen) {
-    body.webkitRequestFullscreen();
+  } else if (document.documentElement.webkitRequestFullscreen) {
+    document.documentElement.webkitRequestFullscreen();
     filled = true;
     body.style.width = "100%";
-  } else if (body.msRequestFullscreen) {
-    body.msRequestFullscreen();
+  } else if (document.documentElement.msRequestFullscreen) {
+    document.documentElement.msRequestFullscreen();
     filled = true;
     body.style.width = "100%";
   } /*
