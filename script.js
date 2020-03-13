@@ -1,3 +1,15 @@
+function hasBeenHere() {
+  if (localStorage.getItem("visited") == "true"){
+    // Not the first time
+  } else {
+    // New visitor
+    localStorage.setItem("visited", "true");
+    modalBg.style.display = "block";
+  }
+}
+var modalBg = document.getElementById("modalBg");
+var modalMain = document.getElementById("modal");
+var modalContent = document.getElementById("modalContent");
 var body = document.getElementById("body");
 var filled = false;
 var i = 2;
@@ -82,4 +94,8 @@ function automatic() {
   window.clearInterval(myInterval);
   clearAll();
 }
+}
+
+function destroyModal() {
+  modalBg.style.display = "none"; 
 }

@@ -8,7 +8,7 @@
     <link rel="icon" href="logo.png" type="image/png">
     <script src="https://kit.fontawesome.com/c425311c1a.js" crossorigin="anonymous"></script>
   </head>
-  <body id = "body">
+  <body id = "body" onload = "hasBeenHere()">
     <nav class = "nav"><a class = "auto" href = "javascript:automatic();"><i class="fas fa-stopwatch"></i></a><h1>pi day 2020</h1><a class = "full" href = "javascript:fullScreen();"><i class="fas fa-compress"></i></a></nav>
     <img src = "logo.png" class = "logo" id = "logo" />
     <div class = "micah-box">
@@ -24,6 +24,14 @@
       <h1>3</h1><br>
       <h1>.</h1><br>
       <h1>1</h1><br>
+    </div>
+    <div id = "modalBg" onclick = "destroyModal()">
+      <div id = "modal">
+        <div id = "modalContent">
+          Welcome, and happy Pi Day!  Click on the pi or press any key on your keyboard to generate more digits.  Use the stopwatch button to turn on and off auto mode and the fullscreen button to enter full screen mode.
+          <br><br><br><a class = "bigBtn" href = "javascript:destroyModal()">okay</a>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
