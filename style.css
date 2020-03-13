@@ -11,9 +11,12 @@ html {
 
 body {
   padding-bottom: 50vh;
-  background: -moz-linear-gradient(top, #19c9ff 0%, #d504f9 100%);
-  background: -webkit-linear-gradient(top, #19c9ff 0%,#d504f9 100%);
-  background: linear-gradient(to bottom, #19c9ff 0%,#d504f9 100%);
+  background: #31e2f9;
+  background: -moz-linear-gradient(-45deg,  #31e2f9 0%, #9002fc 100%);
+  background: -webkit-linear-gradient(-45deg,  #31e2f9 0%,#9002fc 100%);
+  background: linear-gradient(135deg,  #31e2f9 0%,#9002fc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31e2f9', endColorstr='#9002fc',GradientType=1 );
+
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
