@@ -32,8 +32,8 @@ function nextDigit() {
 }
 
 function fullScreen() {
-  /*
-  if (filled = false) { */
+  if (filled == false) {
+    console.log("fullScreen()");
   if (document.documentElement.requestFullscreen) {
     document.documentElement.requestFullscreen()
     filled = true;
@@ -50,22 +50,23 @@ function fullScreen() {
     document.documentElement.msRequestFullscreen();
     filled = true;
     body.style.width = "100%";
-  } /*
+  }
   } else {
-    if (body.exitFullscreen) {
-    body.exitFullscreen();
+    console.log("exitFullscreen()");
+    if (document.exitFullscreen) {
+    document.exitFullscreen();
     filled = false;
-  } else if (body.mozExitFullScreen) {
-    body.mozExitFullScreen();
+  } else if (document.mozExitFullScreen) {
+    document.mozExitFullScreen();
     filled = false;
-  } else if (body.webkitExitFullscreen) {
-    body.webkitExitFullscreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
     filled = false;
   } else if (body.msExitFullscreen) {
-    body.msExitFullscreen();
+    document.msExitFullscreen();
     filled = false;
   }
-  } */
+  }
 }
 
 function clearAll() {

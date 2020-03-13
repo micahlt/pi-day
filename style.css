@@ -16,7 +16,6 @@ body {
   background: -webkit-linear-gradient(-45deg,  #31e2f9 0%,#9002fc 100%);
   background: linear-gradient(135deg,  #31e2f9 0%,#9002fc 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31e2f9', endColorstr='#9002fc',GradientType=1 );
-
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
